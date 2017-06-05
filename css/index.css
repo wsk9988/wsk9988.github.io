@@ -1,0 +1,353 @@
+@charset "UTF-8";
+.banner480 a {
+  position: absolute;  /*脱离标准流，不占用标准流的位置*/
+  height: 480px;
+  width: 100%;  /*这个宽度不能省略*/
+  background: url(../images/banner480.png) no-repeat center center;
+}
+.main {
+  position: relative;  /*让main有层级，不能被banner480盖住*/
+}
+.main-left {
+  width: 190px;
+  height: 450px;
+  background-color:#6E6568;
+  float: left;
+  padding: 15px 0;
+}
+.main-left ul li {
+  height: 30px;
+  /*line-height: 30px;*/
+  padding-left: 12px;
+}
+.main-left ul li a {
+  color: #fff;
+  font: 14px/30px "microsoft yahei";
+}
+.main-left ul li a:hover {
+  color:red;
+}
+.main-left ul li:hover {
+  background-color: #E3E4E5;
+}
+.main-center {
+  width: 790px;
+  height: 480px;
+  /*background-color: red;*/
+  float: left;
+  margin-left: 10px;
+}
+.main-center-top {
+  position:relative;
+}
+.arrow {
+  display: none;
+}
+.main-center-top:hover .arrow {
+  display :block;
+}
+.arrow-left, .arrow-right {
+  width: 30px;
+  height: 60px;
+  /*line-height: 60px;*/
+  text-align: center;
+  background-color: rgba(0, 0, 0, .4);
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  font: 26px/60px "宋体";
+  cursor: pointer;
+}
+.arrow-left {
+  left:0;
+}
+.arrow-right {
+  right: 0;
+}
+.main-center-bl,.main-center-br{
+  width: 390px;
+  height: 130px;
+}
+.main-center-bottom {
+  margin-top: 10px;
+}
+.main-center-bl {
+  background-color: blue;
+}
+.main-center-br {
+  background-color: pink;
+}
+.circle ul {
+  width: 180px;
+  height: 12px;
+  background-color: rgba(255,255,255,.5);
+  /*background-color: red;*/
+  position: absolute;
+  left: 50%;
+  margin-left: -90px;
+  bottom: 20px;
+  border-radius: 10px;
+  padding: 4px 0;
+}
+.circle ul li {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  float: left;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+.circle ul li.current {
+  background-color: red;
+}
+.main-right {
+  width: 190px;
+  height: 480px;
+  /*background-color: pink;*/
+  background-color: #fff;
+  float: right;
+  overflow:hidden;
+}
+.main-right-login {
+  height: 115px;
+  border-bottom: 1px solid #E6E6E6;
+  padding: 0 10px;
+}
+.login-info {
+  height: 60px;
+  /*margin-top: 15px;*/
+  padding-top: 15px;
+}
+.login-info a {
+  width: 45px;
+  height: 45px;
+  display: block;
+  float: left;
+}
+.login-info p {
+  float: left;
+  margin-left: 10px;
+  height: 20px;
+  /*margin-top: 3px;*/
+}
+.login-info img {
+  width: 100%;
+  border-radius: 50%;
+}
+.login-profit a {
+  width: 70px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  display: inline-block; /*转换成行内块，让两个a标签既能设置高宽 ，也能在一行显示*/
+  border: 2px solid #E01222;
+  color: #E01222;
+}
+.login-profit a:hover {
+  background-color: #E01222;
+  color: #fff;
+}
+.main-right-news {
+  height: 154px;
+  border-bottom: 1px solid #E6E6E6;
+  padding:0 15px;
+}
+.news-top {
+  /*height: 11px;*/
+  border-bottom: 1px solid #E6E6E6;
+  padding: 10px 0 5px;
+  position:relative;
+}
+.news-top .cuxiao {
+  border-right: 1px solid #E6E6E6;
+  padding-right: 12px;
+}
+.news-top .gonggao {
+  padding-left: 12px;
+}
+.redLine {
+  width: 28px;
+  height: 2px;
+  background-color: #DB192B;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+.news-bottom {
+  padding-top: 19px;
+}
+.news-bottom ul li {
+  height: 24px;
+}
+.main-right-live ul {
+  width: 192px;
+}
+.main-right-live ul li {
+  width: 47px;
+  height: 69px;
+  border: 1px solid #E7E7E7;
+  float: left;
+  border-top: none;
+  margin-left: -1px;
+}
+.main-right-live ul li a {
+  height: 23px;
+  display: block;
+  text-align: center;
+  padding-top: 46px;
+  position: relative;
+}
+.main-right-live ul li i {
+  width: 17px;
+  height: 23px;
+  background: url(../images/sprite2.png) no-repeat -4px -89px;
+  position: absolute;
+  top:15px;
+  left: 14px;
+}
+.main-right-live ul li span {
+  width: 12px;
+  height: 16px;
+  line-height: 12px;
+  background-color: #E01121;
+  position: absolute;
+  right: 0;
+  top:0;
+  color:#fff;
+}
+.main-right-live ul li s {
+  width: 0;
+  height: 0;
+  border-width: 2px 6px;
+  position: absolute;
+  left: 0;
+  bottom:0;
+  border-color: #E01121 #E01121 #fff;
+  border-style: solid;
+}
+/*main部分结束*/
+
+/*seckill部分开始*/
+.seckill-top {
+  height: 55px;
+  background: url(../images/seckill_hd.png) no-repeat;
+  margin-top: 10px;
+  position:relative;
+}
+.seckill-top-left {
+  float: left;
+}
+.seckill-top-left .icon1 {
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  left: -4px;
+  top:-2px;
+  background: url(../images/sprite1.png) no-repeat -190px -48px;
+}
+.seckill-top-left .icon2 {
+  width: 34px;
+  height: 40px;
+  position: absolute;
+  left: 30px;
+  top:8px;
+  background: url(../images/sprite1.png) no-repeat 0 -40px;
+}
+.seckill-top-left h3 {
+  color: #fff;
+  font: 26px/50px "fzzhengheis-el-gbregular";
+  float: left;
+  margin-left: 73px;
+}
+.seckill-top-left a {
+  float: left;
+  color: #fff;
+  margin-left: 14px;
+  margin-top: 20px;
+  height: 24px;
+  padding-right: 20px;
+  position: relative;
+}
+.seckill-top-left a .icon3 {
+  width: 15px;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  bottom: 7px;
+  background: url(../images/sprite1.png) no-repeat -154px -40px;
+}
+.seckill-top-right {
+  float: right;
+  height: 55px;
+  line-height: 55px;
+  margin-right: 20px
+}
+.seckill-top-right span {
+  color: #fff;
+  font-size: 14px;
+
+}
+.seckill-top-right img {
+  margin: 0 10px;
+}
+.seckill-bottom {
+  height: 224px;
+  padding: 13px 0;
+  background-color: #fff;
+}
+.seckill-bottom-left {
+  width: 1000px;
+  height: 224px;
+  float: left;
+}
+.seckill-bottom-left ul li{
+  width: 169px;
+  height: 225px;
+  border-right: 1px solid #E7E7E7;
+  padding: 0 15px;
+  float: left;
+}
+.seckill-bottom-left ul li .icon {
+  height: 150px;
+  line-height: 150px;
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
+}
+.seckill-bottom-left li .icon .tuijian {
+  width: 30px;
+  height: 40px;
+  line-height: 30px;
+  text-align: center;
+  background: url(../images/sprite1.png) no-repeat -54px -40px;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  color: #fff;
+}
+.seckill-bottom-left ul li .des {
+  margin-top: 6px;
+  /*line-height: 20px;*/
+
+}
+.seckill-bottom-left ul li .shadow {
+  width: 150px;
+  height: 6px;
+  background: url(../images/sprite1.png) no-repeat -10px -15px;
+  position: absolute;
+  left: 0;
+  bottom:0;
+}
+.seckill-bottom-left li .price {
+  margin-top: 6px;
+}
+.seckill-bottom-left li .now {
+  color: #F10214;
+  margin-right: 10px;
+}
+.seckill-bottom-left li .now em {
+  font-size: 20px;
+  font-weight: bold;
+}
+/*seckill部分结束*/
